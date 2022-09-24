@@ -1,0 +1,15 @@
+.nav {
+    background: #DECBB7;
+    width: 100%;
+    padding: 1em;
+    box-shadow: rgba(0, 0, 0, 0.213) 0 6px 1px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 5;
+}
+
+.nav_logo {
+    font-size: 4em;
+    color: #433633;
+}

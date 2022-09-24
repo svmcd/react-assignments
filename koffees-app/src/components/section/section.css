@@ -1,0 +1,36 @@
+.section {
+    height: 100vh;
+    position: relative;
+}
+
+.beans2 {
+    background-image: url(/public/images/beans.png);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+    opacity: .6;
+}
+
+.section_header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    z-index: 1;
+}
+
+.section_title {
+    font-size: 4rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    z-index: 1;
+}
+
+.section_wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
