@@ -1,0 +1,31 @@
+article {
+    width: 350px;
+    height: 450px;
+    background-color: #ffcb47;    
+    color: black;
+    border-radius: 5%;
+    box-shadow: rgba(0, 0, 0, 0.295) -6px 6px;
+    padding: 2em;
+}
+
+article:hover {
+    transform: scale(1.05);
+    transition: .3s ease-in;
+}
+
+@media screen and (max-width: 1000px) {
+    article:hover{
+        transform: none;
+    }
+}
+
+article header {
+    height: 15%;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+}
+
+article section {
+    height: 85%;
+}
