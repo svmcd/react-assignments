@@ -19,7 +19,7 @@ class Item extends React.Component{
             this.className = "todo_item todo_item-done" 
         }
         else {
-            this.className += "todo_item" 
+            this.className += "todo_item " 
         }
         return (
             <li onClick={this.onItemClick} className={this.className}>{this.props.name}</li>

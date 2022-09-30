@@ -1,49 +1,62 @@
+import React from "react";
 import Item from "../Item/item";
+import Input from "../input/input"
+import tasksObject from "../../data/tasks"
 import "./todo.css";
 
-const Todo = () => {
+class Todo extends React.Component {
 
-    const tasks = [
-        {
-            name: "homework",
-            done: false,
-        },
-        {
-            name: "go to gym",
-            done: false,
-        },
-        {
-            name: "eat noodles",
-            done: false,
-        },
-        {
-            name: "drink",
-            done: false,
-        },
-        {
-            name: "feed hamster",
-            done: false,
-        },
-        {
-            name: "take a nap",
-            done: false,
-        },
-    ];
+    constructor(props) {
+        super(props);
+        this.state = {
+            tasks: [],
+        }
+    }
 
-    let listItems = tasks.map( task => {
-        return <Item name={task.name} done={task.done}/>
-    });
+    // runt na het aanmaken en tekenen van een component
+    componentDidMount() {
+        this.setState({
+            tasks: tasksObject.tasks,
+        });
+    }
 
-    return(
-        <article className="todo">
-            <header>
-                <h1>things to do today:</h1>
-            </header>
-            <ul className="todo_list">
-                {listItems}
-            </ul>
-        </article>
-    );
+    // runt na het updaten van de state
+    componentDidUpdate() {
+
+    }
+
+    inputPressedEnter = (inputFromInputComponent) => {
+        let toBeAdded = [
+            {
+                name: inputFromInputComponent,
+                done: false,
+                id: this.state.tasks.length + 1,
+            }
+        ]
+        let mergedArray =  this.state.tasks.concat(toBeAdded);
+        this.setState({
+            tasks: mergedArray,
+        });
+    }
+
+    render() {
+
+        let items = this.state.tasks.map(task => {
+            return <Item name={task.name} key={task.id}> </Item>
+        });
+
+        return (
+            <article className="todo">
+                <header>
+                    <h1>things to do today:</h1>
+                </header>
+                <ul className="todo_list">
+                    {items}
+                </ul>
+                <Input inputPressedEnter={this.inputPressedEnter}/>
+            </article>
+        );
+    };
 };
 
 export default Todo;
