@@ -1,0 +1,73 @@
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row !important;
+    justify-content: center;
+}
+
+.todo {
+    height: 40rem;
+    width: 30rem;
+    background-color: #131313;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: #040404 0px 10px 50px 5px,
+    inset #1DB954 0 10px;
+    margin: 1rem;
+}
+
+.todo header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+}
+
+.todo_title {
+    font-size: 2rem;
+}
+
+.todo_list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: .5rem;
+    height: 60%;
+    overflow: scroll;
+}
+
+.todo_item {
+    padding: .25rem;
+    background-color: #191919;
+    font-size: 1.75rem;
+    font-weight: 200;
+}
+
+.todo_item:hover {
+    background-color: #1DB954;
+    cursor: pointer;
+    transition: .1s ease-in;
+    padding-left: .5rem;
+    text-decoration: line-through;
+}
+
+.todo_item-done {
+    background-color: #1DB954;
+    text-decoration: line-through;
+    padding-left: .5rem;
+}
+
+.todo_item-done:hover {
+    transition: .1s ease-in;
+}
+
+.none {
+    display: none !important;
+}

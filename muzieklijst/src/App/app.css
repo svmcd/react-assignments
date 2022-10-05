@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+html {
+  font-size: 62, 5%;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: #1db954;
+  height: 0;
+}
+
+::-webkit-scrollbar-track {
+  background: #101010;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1db954;
+}
+
+::-webkit-scrollbar-corner {
+    background: rgba(0,0,0,0);
+  }
+
+body {
+  background-color: #101010;
+  font-size: 2rem;
+  color: #eeeeee;
+  font-family: "Signika", sans-serif;
+}
+
+.wrap {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo_container {
+  padding: 1rem;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.logo {
+  color: #1db954;
+  padding-bottom: 2rem;
+}
+
+.logo_subtitle {
+  font-size: 1.5rem;
+  font-style: italic;
+}

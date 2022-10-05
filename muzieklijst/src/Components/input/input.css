@@ -1,0 +1,45 @@
+.inputContainer {
+    height: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.input {
+    font-size: 1.55rem;
+    background-color: #191919;
+    color: white;
+    font-family: 'Signika', sans-serif;
+    width: 100%;
+    border: none;
+    padding-left: .5rem;
+}
+
+.input:focus {
+    outline: none !important;
+    border:3px solid #1DB954;
+    border-bottom: none;
+}
+
+.submit {
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 0px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #1DB954;
+    border: none;
+    color: white;
+    font-family: 'Signika', sans-serif;
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+.submit:hover {
+    background-color: hsl(141, 73%, 46%);
+}
+
+.submit:active {
+    background-color: hsl(141, 73%, 50%);
+}
