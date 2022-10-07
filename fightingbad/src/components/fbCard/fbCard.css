@@ -1,0 +1,149 @@
+.fbCard {
+    width: 30rem;
+    height: 32rem;
+    background: rgb(9,48,9);
+    background: linear-gradient(135deg, rgba(9,48,9,1) 26%, rgba(3,34,2,1) 92%);
+    box-shadow: #03220279 5px 5px 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.fbCard__header {
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.fbCard__title {
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 3.2rem;
+}
+.fbCard__label-wrapper {
+    display: flex;
+    width: 100%;
+    gap: .5rem;
+}
+
+.fbCard__type {
+    font-size: 1rem;
+    background: linear-gradient(hsl(118, 89%, 12%), #032202);
+    padding: .3rem;
+    border-radius: .75rem;
+    min-width: 5rem;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.fbCard__type--danger {
+    background: linear-gradient(red, hsl(0, 100%, 30%));
+}
+
+.fbCard__type--meth {
+    background: linear-gradient(rgb(227, 249, 255), hsl(209, 100%, 84%));
+    color: black;
+}
+
+.fbCard__type--chemistry {
+    background: linear-gradient(rgb(10, 255, 100), hsl(120, 45%, 39%));
+    color: black;
+}
+
+.fbCard__type--chicken {
+    background: linear-gradient(rgb(104, 59, 18), hsl(30, 77%, 17%));
+}
+
+
+.fbCard__type--manipulation {
+    background: linear-gradient(rgb(209, 191, 54), hsl(61, 90%, 52%));
+    color: black;
+}
+
+
+.fbCard__type--wealthy {
+    background: linear-gradient(rgb(54, 105, 170), hsl(228, 46%, 35%));
+}
+
+.fbCard__type--teacher {
+    background: linear-gradient(rgb(98, 23, 107), hsl(302, 78%, 13%));
+}
+
+
+.fbCard__type--compoundV {
+    background: linear-gradient(rgb(126, 24, 24), hsl(0, 100%, 30%));
+}
+
+.fbCard__type--mommyissues {
+    background: linear-gradient(rgb(240, 172, 221), hsl(298, 100%, 79%));
+    color: black;
+}
+
+.fbCard__section {
+    height: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fbCard__img {
+    height: 90%;
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.fbCard__h3-wrapper {
+    height: 10%;
+    font-size: 1.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(23,38,75);
+    background: radial-gradient(circle, rgba(23,38,75,1) 0%, rgba(2,7,28,1) 100%);
+    border-top: solid hsl(118, 89%, 10%) 5px;
+}
+
+.fbCard__hp {   
+}
+
+.fbCard__footer {
+    height: 10%;
+}
+
+.fbCard__button {
+    width: 50%;
+    height: 100%;
+    cursor: pointer;
+    font-size: 2rem;
+    border: none;
+    color: white;
+    background: linear-gradient(#369457, #29773E);
+    color: linear-gradient(hsl(118, 89%, 7%), hsl(118, 89%, 10%));
+    background-color: white;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+    
+
+.fbCard__button:nth-child(2) {
+    border-bottom-right-radius: 1rem;
+    background: linear-gradient(red, hsl(0, 100%, 30%));
+}
+
+.fbCard__button:nth-child(2):hover {
+    background: hsl(0, 100%, 30%);
+}
+
+.fbCard__button:nth-child(1) {
+    border-bottom-left-radius: 1rem;
+}
+
+.fbCard__button:nth-child(1):hover {
+    background: #29773E;
+}

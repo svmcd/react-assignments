@@ -1,0 +1,16 @@
+
+.counterCard {
+    height: 66.1rem;
+    width: 45%;
+    background: rgb(9,48,9);
+    background: linear-gradient(135deg, rgba(9,48,9,1) 26%, rgba(3,34,2,1) 72%);    box-shadow: #03220279 5px 5px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+}
+
+.counterCard__h1 {
+    font-size: 1200%;
+    font-weight: 500;
+}

@@ -1,0 +1,7 @@
+
+.fbCardWrapper {
+    display: flex;
+    width: 55%;
+    flex-wrap: wrap;
+    gap: 2rem;
+}

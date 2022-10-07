@@ -20,12 +20,16 @@ class Input extends React.Component {
         }
     }
 
+    onButtonClick = (event) => {
+        this.props.inputPressedEnter(this.state.inputValue);
+    }
+
     render(){
         return (
             <>
                 <div className="inputContainer">
                     <input className="input" name="song" type="text" placeholder="song name" onKeyUp={this.enter} onChange={this.update} value={this.state.inputValue}/>
-                    <input className="submit" type="submit" value="add"/>
+                    <input className="submit" type="submit" value="add" onClick={this.onButtonClick}/>
                 </div>
             </>
         );
