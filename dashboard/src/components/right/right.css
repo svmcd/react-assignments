@@ -94,3 +94,18 @@
     font-size: 50%;
     color: var(--gray2);
 }
+
+@media only screen and (max-width: 1000px) {
+    .productsList {
+        justify-content: space-evenly;
+    }
+    .productsList__item {
+        width: 45%;
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    .productsList__item {
+        width: 100%;
+    }
+  }
