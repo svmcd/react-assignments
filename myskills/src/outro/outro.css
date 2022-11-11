@@ -1,0 +1,19 @@
+
+.outro {
+    width: 50rem;
+    height: 30rem;
+    padding: 2.5rem;
+    background-color: var(--gray);
+    background: rgba(225, 223, 225, 0.50);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: .75rem;
+    border: 1px solid rgba(225, 223, 225, 1);
+}
+
+.outro__title {
+    color: var(--light-gray);
+    font-weight: 400;
+    font-size: 150%;
+}
