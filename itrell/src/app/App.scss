@@ -1,0 +1,115 @@
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::selection {
+    background-color:  rgba(188, 107, 176, 0.612);
+}
+
+html {
+    font-size: 62,5%;
+}
+
+body {
+    font-size: 1.2rem;
+    background-color: rgb(11, 11, 11);
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.itrell__header {
+    background: rgba(92, 92, 92, 0.25);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    .itrell__header-title {
+        font-weight: 500;
+        padding: 2.5rem;
+    }
+}
+
+::-webkit-scrollbar {
+    width: .5rem;
+}
+
+::-webkit-scrollbar-track {
+    background: none;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: rgba(92, 92, 92, 0.5);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    -webkit-backdrop-filter: blur(15px);
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(92, 92, 92, 1);
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+ }
+
+#root {
+    height: 100%;
+    width: 100%;
+}
+
+button, input {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.circle {
+    background-color: rgb(0, 200, 255);
+    width: 50rem;
+    height: 50rem;
+    position: absolute;
+    bottom: -20rem;
+    left: -20rem;
+    border-radius: 100%;
+    filter: blur(50px);
+    opacity: 10%;
+    z-index: -1;
+}
+
+.circle2 {
+    background-color: rgb(255, 0, 217);
+    width: 50rem;
+    height: 50rem;
+    position: absolute;
+    top: 15rem;
+    right: -20rem;
+    border-radius: 100%;
+    filter: blur(50px);
+    opacity: 10%;
+    z-index: -1;
+}
+
+.circle3 {
+    background-color: rgb(0, 255, 102);
+    width: 50rem;
+    height: 50rem;
+    position: absolute;
+    top: -30rem;
+    left: 50%;
+    border-radius: 100%;
+    filter: blur(50px);
+    transform: translate(-50%, 0%);
+    opacity: 10%;
+    z-index: -1;
+}

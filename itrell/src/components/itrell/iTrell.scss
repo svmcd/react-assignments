@@ -1,0 +1,170 @@
+.itrells__wrapper {
+    display: flex;
+    height: 90%;
+    width: 100vw;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2.5rem;
+    padding: 2.5rem;
+    overflow: scroll;
+
+    .itrell {
+        background: rgba(92, 92, 92, 0.15);
+        border-radius: 15px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        width: 400px;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        border: 2px solid rgba(92, 92, 92, 0.25);
+        height: max-content;
+        max-height: 100%;
+        flex-shrink: 0;
+        position: relative !important;
+
+        .itrell__header {
+            display: flex;
+            justify-content: space-between;
+            min-height: 4rem;
+            align-items: center;
+            padding: 1rem;
+            background: rgba(92, 92, 92, 0.15);
+            border-radius: 5px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 1rem;
+
+            &::before {
+                height: 7rem;
+                width: 7rem;
+                content: "";
+                position: absolute;
+                background-color: rgb(0, 200, 255);
+                bottom: 0rem;
+                left: 20%;
+                border-radius: 100%;
+                filter: blur(6rem);
+                opacity: 100%;
+                z-index: 1;
+            }
+
+            .itrell__heading {
+                font-weight: 300;
+            }
+
+            .itrell__header-wrapper {
+                display: flex;
+                gap: .5rem;
+                align-items: center;
+
+                .itrell__number {
+                    background-color: rgb(255, 104, 104);
+                    height: 1.75rem;
+                    width: 1.75rem;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 75%;
+                }
+
+                .itrell__edit {
+                    color: white;
+                    background: none;
+                    border: none;
+                    cursor: pointer;
+                    font-size: 125%;
+                    font-weight: 500;
+                }
+            }
+        }
+
+        .itrell__activities {
+            overflow-y: scroll;
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            .itrell__activity {
+                background: rgba(92, 92, 92, 0.15);
+                border-radius: 16px;
+                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                backdrop-filter: blur(15px);
+                -webkit-backdrop-filter: blur(15px);
+                border-radius: 5px;
+                padding: 1rem;
+                display: flex;
+                flex-direction: column;
+                gap: .15rem;
+
+                .itrell__label {
+                    font-weight: 300;
+                    font-size: 50%;
+                    background-color:  rgba(115, 186, 117, 0.25);
+                    border: 1px solid rgb(115, 186, 117);
+                    color:  rgb(115, 186, 117);
+                    border-radius: .3em;
+                    width: max-content;
+                    padding: .2rem .5rem;
+                    cursor: pointer;
+                }
+
+                .itrell__desc {
+                    font-weight: 200;
+                    font-size: 90%;
+                }
+            }
+        }
+
+        .itrell__input {
+            margin-top: 1rem;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+
+            .itrell__input-label {
+                top: -.40rem;
+                left: 1rem;
+                font-weight: 200;
+                position: absolute;
+                z-index: 1;
+                background-color: rgba(27,40,45,255);
+                font-size: 65%;
+                padding: 0 .25rem;
+            }
+
+            .itrell__inputfield {
+                background: none;
+                border-radius: 5px;
+                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                backdrop-filter: blur(15px);
+                -webkit-backdrop-filter: blur(15px);
+                border-radius: 5px;
+                padding: 1rem;
+                border: none;
+                color: white;
+                font-size: 90%;
+                font-weight: 200;
+                box-sizing: border-box;
+                border: rgba(188, 107, 176,  0) 2px solid;
+                font-style: italic;
+                border: rgb(188, 107, 176) 2px solid;
+        
+                &:focus {
+                    outline: none;
+                    border: rgb(188, 107, 176) 2px solid;
+                    box-shadow: 0 0px 0px 5px rgba(188, 107, 176, 0.25);
+                    font-style: normal;
+                }
+            }
+        }
+    }
+
+}
