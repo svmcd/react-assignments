@@ -1,0 +1,65 @@
+.filterBar{
+    position: fixed;
+    font-size: 65%;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: min(10rem, 10vh);
+    border-radius: .5rem;
+    background: linear-gradient(225deg, #ffffff, #e6e6e6);
+    box-shadow:  -20px 20px 60px #d9d9d9,
+                 20px -20px 60px #ffffff;
+}
+
+.filterBar__wrapper {
+    width: 60vw;
+    height: 100%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filterBar__inputWrapper{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.filterBar__inputWrapper > input{
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.filterBar__inputWrapper > label {
+    cursor: pointer;
+    border-radius: .5rem;
+    background: linear-gradient(225deg, #ffffff, #e6e6e6);
+    box-shadow:  -20px 20px 60px #d9d9d9,
+                 20px -20px 60px #ffffff;
+    padding: .5rem 2rem;
+    text-transform: capitalize;
+}
+
+.filterBar__inputWrapper > label:hover {
+    background: linear-gradient(225deg, #e1e1e1, #d3d3d3);
+    box-shadow:  -20px 20px 60px #d9d9d9,
+                 20px -20px 60px #ffffff;
+}
+
+.filterBar__inputWrapper > input:checked + label {
+    background: linear-gradient(225deg, #4393d8, #4393d8);
+    box-shadow:  -20px 20px 60px #d9d9d9,
+                 20px -20px 60px #ffffff;
+}
+
+@media screen and (max-width: 43.75rem){
+    .filterBar{
+        height: auto;
+        padding: 1rem;
+    }
+    .filterBar__wrapper {
+        width: 100%;
+        justify-content: flex-start;
+    }
+}

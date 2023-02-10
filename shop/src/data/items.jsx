@@ -14,13 +14,14 @@ import water5 from "../img/water/pexels-snapwire-113734.jpg"
 import water6 from "../img/water/pexels-steve-johnson-1000084.jpg"
 import water7 from "../img/water/pexels-tara-winstead-6489720.jpg"
 
-import chicken1 from "..img/chicken/"
-import chicken2 from "..img/chicken/"
-import chicken3 from "..img/chicken/"
-import chicken4 from "..img/chicken/"
-import chicken5 from "..img/chicken/"
-import chicken6 from "..img/chicken/"
-import chicken7 from "..img/chicken/"
+import chicken1 from "../img/chicken/pexels-eghost-2611917.jpg"
+import chicken2 from "../img/chicken/pexels-harry-dona-2338407.jpg"
+import chicken3 from "../img/chicken/pexels-harry-dona-2418486.jpg"
+import chicken4 from "../img/chicken/pexels-lukas-616354.jpg"
+import chicken5 from "../img/chicken/pexels-pixabay-262945.jpg"
+import chicken6 from "../img/chicken/pexels-pixabay-60616.jpg"
+import chicken7 from "../img/chicken/pexels-yanuar-putut-widjanarko-2232433.jpg"
+
 
 
 const items = [
@@ -111,7 +112,51 @@ const items = [
             image: water7,
             alt: "",
         },
-    ]
+    ],
+    [
+        {
+            name: "Chicken 1",
+            description: "Lorem ipsum dolor sit amet",
+            image: chicken1,
+            alt: "",
+        },
+        {
+            name: "Chicken 2",
+            description: "Lorem ipsum dolor sit amet",
+            image: chicken2,
+            alt: "",
+        },
+        {
+            name: "Chicken 3",
+            description: "Lorem ipsum dolor sit amet",
+            image: chicken3,
+            alt: "",
+        },
+        {
+            name: "Chicken 4",
+            description: "Lorem ipsum dolor sit amet",
+            image: chicken4,
+            alt: "",
+        },
+        {
+            name: "Chicken 5",
+            description: "Lorem ipsum dolor sit amet",
+            image: chicken5,
+            alt: "",
+        },
+        {
+            name: "Chicken 6",
+            description: "Lorem ipsum dolor sit amet",
+            image: chicken6,
+            alt: "",
+        },
+        {
+            name: "Chicken 7",
+            description: "Lorem ipsum dolor sit amet",
+            image: chicken7,
+            alt: "",
+        },
+    ],
 ]
 
 export default items;
